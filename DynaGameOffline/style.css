@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Quicksand;
+    src: url('../fonts/Quicksand-SemiBold.ttf');
+}
+
+html,body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    background-color: #111;
+    background-image: url('../media/checkers.png');
+    background-repeat: repeat;
+    animation: scrolling 15s linear 1;
+    animation-direction: forward;
+    animation-iteration-count: infinite;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.brand-announcement {
+    text-align: center;
+    font-size: 1.8rem;
+    color: rgba(255,255,255,0.8);
+}
+
+.brand-logo {
+    text-align: center;
+}
+
+.brand-logo img {
+    width: 800px;
+}
+
+@media (max-width:500px) {
+    .brand {
+        margin: 20px !important;
+    }
+    .brand-logo img {
+        width: 100%;
+    }
+}
